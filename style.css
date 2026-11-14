@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #49352d;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #9a5b45;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #49352d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c27b60;
+}
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background-color: #f5e3d7;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #9a5b45;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #b56f54;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #9a5b45;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #754330;
+}
+
+.about {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.about h2,
+.projects h2,
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #9a5b45;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.projects {
+    padding: 60px 10%;
+    background-color: #f5e3d7;
+    text-align: center;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.contact {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+footer {
+    background-color: #49352d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
